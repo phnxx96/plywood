@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
+import About from "./Pages/About";
 import Navbar from "./components/Navbar/Navbar";
-import MicaCollection from "./pages/MicaCollection";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Catalogue from "./pages/Catalogue";
+import MicaCollection from "./Pages/MicaCollection";
+import Home from "./Pages/Home";
+import Products from "./Pages/Products";
+import Catalogue from "./Pages/Catalogue";
 import Footer from "./components/Footer/Footer";
 import ScrollToHash from "./components/ScrollToHash";
 function App() {
