@@ -1,0 +1,529 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Poppins",sans-serif;
+  overflow-x:hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+  width:100%;
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  z-index:1000;
+
+  transition:all .35s ease;
+
+  background:transparent;
+}
+/* ===========================
+   INNER PAGE NAVBAR
+=========================== */
+
+.navbar--dark{
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.25);
+
+}
+
+.navbar--dark .navbar__brand-name{
+
+    color:#1F4D2B;
+
+}
+
+.navbar--dark .navbar__link{
+
+    color:#1F4D2B;
+
+}
+
+.navbar--dark .navbar__link:hover{
+
+    color:#B6844D;
+
+}
+
+.navbar--dark .navbar__link--active{
+
+    color:#B6844D;
+
+}
+
+.navbar--dark .navbar__hamburger{
+
+    color:#1F4D2B;
+
+}
+.navbar--scrolled{
+
+    background:rgba(255,255,255,.94);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.navbar--scrolled .navbar__container{
+
+  padding:12px 45px;
+}
+
+.navbar--scrolled .navbar__brand-name{
+
+  color:#1F4D2B;
+}
+
+.navbar--scrolled .navbar__link{
+
+  color:#333;
+}
+
+.navbar--scrolled .navbar__link:hover{
+
+  color:#1F4D2B;
+}
+
+.navbar--scrolled .navbar__link--active{
+
+  color:#1F4D2B;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.navbar__container{
+
+  max-width:1500px;
+
+  margin:auto;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:14px 55px;
+
+  transition:.35s;
+}
+
+/* ===========================
+   BRAND
+=========================== */
+
+.navbar__brand{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  text-decoration:none;
+
+  transition:.35s;
+}
+
+.navbar__brand:hover{
+
+  transform:translateY(-2px);
+}
+
+.navbar__logo{
+
+  width:68px;
+
+  height:68px;
+
+  border-radius:50%;
+
+  overflow:hidden;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:#F5F2EA;
+
+  box-shadow:0 8px 22px rgba(0,0,0,.15);
+
+  transition:.35s ease;
+}
+
+.navbar__logo img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+}
+
+.navbar__brand:hover .navbar__logo{
+
+  transform:rotate(-5deg) scale(1.05);
+}
+
+.navbar__brand-name{
+
+  color:white;
+
+  font-size:1.7rem;
+
+  font-weight:700;
+
+  letter-spacing:.5px;
+
+  transition:.35s;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navbar__links{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:42px;
+
+  list-style:none;
+}
+
+.navbar__link{
+
+  position:relative;
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:1rem;
+
+  font-weight:500;
+
+  padding:8px 0;
+
+  transition:.35s ease;
+}
+
+.navbar__link:hover{
+
+  color:#D8B36A;
+}
+
+.navbar__link--active{
+
+  color:#D8B36A;
+}
+
+.navbar__link::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+
+  bottom:-6px;
+
+  transform:translateX(-50%);
+
+  width:0;
+
+  height:3px;
+
+  border-radius:30px;
+
+  background:#D8B36A;
+
+  transition:.35s;
+}
+
+.navbar__link:hover::after{
+
+  width:100%;
+}
+
+.navbar__link--active::after{
+
+  width:100%;
+}
+
+/* ===========================
+   ACTIONS
+=========================== */
+
+.navbar__actions{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:18px;
+}
+
+/* ===========================
+   CTA BUTTON
+=========================== */
+
+.navbar__cta{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  text-decoration:none;
+
+  background:#1F4D2B;
+
+  color:white;
+
+  padding:16px 34px;
+
+  border-radius:50px;
+
+  font-weight:600;
+
+  transition:.35s ease;
+
+  box-shadow:0 10px 25px rgba(31,77,43,.25);
+
+  border: none;
+cursor: pointer;
+font-family: inherit;
+}
+
+.navbar__cta:hover{
+
+  background:#B6844D;
+
+  transform:translateY(-4px);
+
+  box-shadow:0 18px 40px rgba(182,132,77,.35);
+}
+
+.navbar__cta-icon{
+
+  flex-shrink:0;
+}
+
+/* ===========================
+   HAMBURGER
+=========================== */
+
+.navbar__hamburger{
+
+  display:none;
+
+  background:none;
+
+  border:none;
+
+  cursor:pointer;
+
+  color:white;
+
+  transition:.3s;
+
+  font-size:2rem;
+  
+}
+
+.navbar--scrolled .navbar__hamburger{
+
+  color:#1F4D2B;
+}
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+.navbar__nav--mobile{
+
+  display:none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.navbar__container{
+
+padding:12px 18px;
+
+}
+
+.navbar__nav--desktop{
+
+display:none;
+
+}
+
+.navbar__hamburger{
+
+display:block;
+
+}
+
+.navbar__nav--mobile{
+
+display:block;
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+max-height:0;
+
+overflow:hidden;
+
+transition:.35s ease;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.navbar__nav--mobile-open{
+
+max-height:550px;
+}
+
+.navbar__links--mobile{
+
+display:flex;
+
+flex-direction:column;
+
+padding:20px;
+}
+
+.navbar__links--mobile li{
+
+list-style:none;
+}
+
+.navbar__link--mobile{
+
+display:block;
+
+padding:18px 0;
+
+color:#333;
+
+border-bottom:1px solid #ececec;
+}
+
+.navbar__link--mobile:hover{
+
+color:#1F4D2B;
+}
+
+.navbar__cta--mobile{
+
+margin-top:20px;
+
+justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar__brand-name{
+    font-size:1.1rem;
+    line-height:1.2;
+    max-width:190px;
+}
+
+.navbar__logo{
+    width:50px;
+    height:50px;
+}
+
+.navbar__brand{
+    gap:10px;
+}
+
+.navbar__hamburger{
+    padding:4px;
+}
+
+.navbar__cta{
+
+display:none;
+}
+
+}
+
+@media(max-width:480px){
+
+.navbar__container{
+
+padding:14px 16px;
+}
+
+.navbar__brand-name{
+    font-size:.95rem;
+    line-height:1.2;
+    max-width:165px;
+}
+
+.navbar__logo{
+    width:44px;
+    height:44px;
+}
+
+.navbar__brand{
+    gap:8px;
+}
+
+.navbar__container{
+    padding:12px 14px;
+}
+}

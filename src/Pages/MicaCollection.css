@@ -1,0 +1,244 @@
+/* ===========================
+   PAGE
+=========================== */
+
+.mica-page{
+    background:#F8F4EE;
+    min-height:100vh;
+    padding:140px 6% 80px;
+}
+
+.mica-container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.mica-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 70px;
+}
+
+.mica-tag{
+
+    display:inline-block;
+
+    background:#1F4D2B;
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.mica-header h1{
+
+    font-size:3.2rem;
+
+    color:#1F4D2B;
+
+    margin-bottom:22px;
+
+    font-family:"Playfair Display",serif;
+}
+
+.mica-header p{
+
+    color:#666;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+}
+
+/* ===========================
+   SECTION CARD
+=========================== */
+
+.mica-section{
+
+    background:white;
+
+    border-radius:26px;
+
+    padding:35px;
+
+    margin-bottom:60px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.mica-section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:30px;
+}
+
+.mica-section-header h2{
+
+    color:#1F4D2B;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+.mica-section-header p{
+
+    color:#777;
+
+    line-height:1.8;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.mica-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.mica-btn{
+
+    background:#1F4D2B;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.mica-btn:hover{
+
+    background:#164021;
+
+    transform:translateY(-3px);
+}
+
+.mica-btn-gold{
+
+    background:#B6844D;
+}
+
+.mica-btn-gold:hover{
+
+    background:#9d713d;
+}
+
+/* ===========================
+   PDF
+=========================== */
+
+.mica-pdf{
+
+    width:100%;
+
+    height:900px;
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+    background:white;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.mica-page{
+
+padding:120px 25px 70px;
+}
+
+.mica-header h1{
+
+font-size:2.5rem;
+}
+
+.mica-section-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+}
+
+.mica-pdf{
+
+height:700px;
+}
+
+}
+
+@media(max-width:768px){
+
+.mica-header h1{
+
+font-size:2rem;
+}
+
+.mica-buttons{
+
+width:100%;
+
+flex-direction:column;
+}
+
+.mica-btn{
+
+width:100%;
+
+text-align:center;
+}
+
+.mica-section{
+
+padding:20px;
+}
+
+.mica-pdf{
+
+height:550px;
+}
+
+}

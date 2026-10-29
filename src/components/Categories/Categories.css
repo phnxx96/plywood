@@ -1,0 +1,222 @@
+/* ====================================
+   CATEGORIES
+==================================== */
+
+.categories{
+  padding:120px 7%;
+  background:#F8F7F4;
+}
+
+.categories__container{
+  max-width:1400px;
+  margin:auto;
+}
+
+/* ====================================
+   HEADER
+==================================== */
+
+.section-header{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-tag{
+  display:inline-block;
+  padding:10px 22px;
+  background:#1F4D2B;
+  color:white;
+  border-radius:50px;
+  font-size:.9rem;
+  font-weight:500;
+  margin-bottom:18px;
+  letter-spacing:.5px;
+}
+
+.section-header h2{
+  font-size:clamp(2.2rem,5vw,3.5rem);
+  color:#1F4D2B;
+  margin-bottom:20px;
+}
+
+.section-header p{
+  max-width:720px;
+  margin:auto;
+  font-size:1.1rem;
+  line-height:1.8;
+  color:#666;
+}
+
+/* ====================================
+   GRID
+==================================== */
+
+.categories__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:35px;
+}
+
+/* ====================================
+   CARD
+==================================== */
+
+.category-card{
+  position:relative;
+  height:430px;
+  border-radius:22px;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+  transition:.45s;
+}
+
+.category-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 25px 55px rgba(0,0,0,.18);
+}
+
+.category-card__image{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.category-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:1s;
+}
+
+.category-card:hover img{
+  transform:scale(1.12);
+}
+
+/* ====================================
+   OVERLAY
+==================================== */
+
+.category-card__overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding:35px;
+  background:linear-gradient(
+      to top,
+      rgba(0,0,0,.88),
+      rgba(0,0,0,.35),
+      transparent
+  );
+}
+
+.category-card__content{
+  width:100%;
+  color:white;
+}
+
+.category-card__content h3{
+  font-size:1.8rem;
+  margin-bottom:14px;
+}
+
+.category-card__content p{
+  color:rgba(255,255,255,.90);
+  line-height:1.8;
+  margin-bottom:22px;
+}
+
+/* ====================================
+   GOLD DIVIDER
+==================================== */
+
+.category-card__content::after{
+  content:"";
+  display:block;
+  width:100%;
+  height:1px;
+  background:rgba(212,181,111,.45);
+  margin:20px 0;
+}
+
+/* ====================================
+   COLLECTION BUTTON
+==================================== */
+
+.collection-btn{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  padding:16px 20px;
+  border-radius:16px;
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+  color:white;
+  text-decoration:none;
+  transition:.35s;
+}
+
+.collection-btn:hover{
+  background:#B6844D;
+  transform:translateY(-3px);
+}
+
+.collection-btn__text{
+  display:flex;
+  flex-direction:column;
+}
+
+.collection-btn__text small{
+  font-size:.72rem;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  opacity:.75;
+}
+
+.collection-btn__text span{
+  margin-top:4px;
+  font-size:1rem;
+  font-weight:600;
+}
+
+.collection-btn svg{
+  transition:.35s;
+}
+
+.collection-btn:hover svg{
+  transform:translateX(8px);
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media(max-width:768px){
+
+.categories{
+  padding:90px 20px;
+}
+
+.section-header{
+  margin-bottom:45px;
+}
+
+.section-header h2{
+  font-size:2.4rem;
+}
+
+.category-card{
+  height:360px;
+}
+
+.category-card__overlay{
+  padding:25px;
+}
+
+.collection-btn{
+  padding:14px 18px;
+}
+
+}

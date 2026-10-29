@@ -1,0 +1,71 @@
+.call-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:5000;
+}
+
+.call-modal{
+    width:420px;
+    max-width:92%;
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    position:relative;
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.call-close{
+    position:absolute;
+    top:18px;
+    right:18px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.call-modal h2{
+    color:#1F4D2B;
+    margin-bottom:8px;
+}
+
+.call-modal p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.call-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    color:#333;
+    padding:16px;
+    border-radius:14px;
+    background:#F8F4EE;
+    margin-bottom:16px;
+    transition:.3s;
+}
+
+.call-item:hover{
+    background:#1F4D2B;
+    color:white;
+    transform:translateY(-3px);
+}
+
+.call-item div{
+    display:flex;
+    flex-direction:column;
+}
+
+.call-item strong{
+    font-size:1rem;
+}
+
+.call-item span{
+    font-size:.9rem;
+    opacity:.8;
+}
